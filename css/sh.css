@@ -1,0 +1,28 @@
+.sh-form {
+	float: right;
+}
+
+.sh-logo {
+	width: 50%;
+	text-align: right;
+	float: left;
+	color: white;
+	fony-size: 1.2em;
+}
+
+.sh-image {
+	z-index: 9999;
+	position: fixed;
+	height: 120px;
+	background: red;
+	margin-top: 20px;
+	margin-left: 70px;
+	border: 10px solid rgba(255, 255, 255, .5);
+	
+}
+
+.sh-btn {
+	background: none;
+	border: none;
+}
+
