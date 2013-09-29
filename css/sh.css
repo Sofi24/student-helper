@@ -1,13 +1,64 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	border-radius: 0px!important;
+}
+
 body {
 	background: #76E5CF!important;
 }
-.navbar-inner {
-	height: 57px;
+.table-bordered {
+	color: #fff;
+	border-top: 5px solid #ddd;	
+}
+.table-bordered td {
+	border-bottom: 1px solid #ddd;
 }
 
+th {
+	text-align: center!important;
+}
+.sh-calendar-tr td {
+	line-height: 12px!important;
+}
+.sh-month {
+	font-size: 20px!important;
+	margin-top: -90px!important;
+	margin-bottom: -140px!important;
+}
+.navbar-inner {
+	height: 57px;
+	margin-left: -25px;
+	width: 988px;
+	padding: 0px;
+}
+
+.sh-subject {
+	text-align: center;
+	background: #DFE0CA;
+	padding: 7px;
+	font-size: 14pt;
+	margin: 15px 15px;	
+}
+
+.sh-subject-list, .sh-news-list {
+	margin-top: 30px;
+	overflow-y: scroll;
+	height: 350px;
+}
+
+.sh-news-label {
+	background: #DFE0CA;
+	padding: 7px;
+	margin: 15px;
+	font-size: 14pt;
+}
+.sh-news-entry {
+	margin: 10px 15px;
+}
 .sh-row {
 	margin-top: 40px;
 }
+
 .sh-form {
 	float: right;
 	margin-top: -20px;
@@ -16,31 +67,40 @@ body {
 .sh-logo {
 	font-family: bira_personal_use_onlyregular;
 	color: white;
-	font-size: 29pt;
-	margin-top: 15px;
+	font-size: 25pt;
+	margin-top: 19px;
+}
+.search {
+	width: 140px;
+	outline: 5px solid rgba(200, 200, 200, .5);
+	margin-right: 10px;
 }
 
+.search:active {
+	outline: 5px solid rgba(200, 200, 200, .5)!important;
+}
 .sh-image {
 	z-index: 9999;
-	position: fixed;
-	height: 80px;
-	width: 80px;
+	height: 70px;
+	width: 70px;
+	margin-top: -55px;
+	margin-bottom: 48px;
 	background: #FC7A56 url('../img/avatar.gif') no-repeat 50%;
-	margin-top: 20px;
-	margin-left: 70px;
-	border: 10px solid rgba(255, 255, 255, .5);
+	margin-left: 50px;
+	outline: 5px solid rgba(255, 255, 255, .5);
 	
 }
 .sh-calendar-top {
+	letter-spacing: 7px;
 	height: 170px;
-	font-size: 116pt;
+	font-size: 110pt;
 	color: #fff;
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 .sh-calendar-bottom {
 	height: 170px;
-	margin-top: -90px;
+	margin-top: -70px;
 	ñolor: #fff!important;
 }
 
@@ -64,8 +124,9 @@ body {
 
 .container {
 	background: #fff;
-	padding: 88px 20px;
+	padding: 0 25px;
 }
+
 
 .sh-files, .sh-news {
 	background: #F5F7DD;
@@ -73,16 +134,20 @@ body {
 	height: 460px;
 }
 
-table.sh-schedule-table tbody {
-	border: 1px solid #E2E2C7;
+table.sh-schedule-table {
+	color: #333;
+	border-top: inherit;
+	margin-left: 40px;
 }
+
 td {
 	width: 100px;
 }
 
 .sh-label {
+	margin-left: 30px;
 	background: #DFE0CA;
-	padding: 5px;
+	padding: 7px;
 	font-size: 14pt;
 	color: #fff;
 	
@@ -90,4 +155,62 @@ td {
 
 .sh-label-container {
 	margin: 15px;
+}
+
+.navbar-inner.footer {
+	height: 40px;
+	margin-top: 10px;
+	margin-bottom: -20px;
+}
+
+.sh-table-type-lab, .sh-table-type-lection, .sh-table-type-practice {
+	width:10px;
+	height: 10px;
+	float: right;
+}
+.sh-table-type-lab {
+	background: #68e08d;
+}
+
+.sh-table-type-lection {
+	background: #ff8762;
+}
+
+.sh-table-type-practice {
+	background: #76e5cf;
+}
+
+.sh-table-type {
+	font-size: 0.7em;
+}
+
+.sh-table-first-col {
+	border-left: none!important;
+	width: 50px;
+}
+
+.sh-from, .sh-to {
+	font-size: 0.5em;
+	color: grey;
+	float:right;
+}
+
+.sh-inline {
+	float: none;
+	display: inline-block;
+}
+
+.sh-table-type-desc {
+	margin-right: 15px;
+	margin-left: 5px;
+	font-size: 0.7em;
+	color: grey;
+}
+
+.sh-schedule-legend {
+	margin: 10px 40px;
+}
+
+.sh-folded-corner {
+	background:  #F5F7DD url('../img/folded-corner.gif') no-repeat;
 }

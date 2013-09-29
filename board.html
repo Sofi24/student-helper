@@ -1,5 +1,7 @@
 <html>
 	<head>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -8,13 +10,13 @@
 	</head>
 
 	<body>
-	
-    	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+    	<div class="navbar navbar-inverse">
     		<div class="navbar-inner">
         		<div class="text-center sh-logo">Student Helper</div>
           		
           		<form class="form-search sh-form">
-  					<input type="text" placeholder="Поиск...">
+  					<input type="text" placeholder="Поиск..." class="search">
  					<button type="submit" class="btn sh-btn"><i class="icon-white icon-search"></i></button>
  					<button class="btn sh-btn"><i class="icon-white icon-cog"></i></button>
 				</form>	
@@ -24,16 +26,16 @@
     		<div class="sh-image span2"></div>
     	</div>
     	
-    	<div class="container">
+    	
     		<div class="row">
-    			<div class="span9 sh-schedule">
+    			<div class="span9 sh-schedule sh-folded-corner">
     				<div class="sh-label-container">
     					<span class="sh-label">Расписание</span>
     				</div>
-    				<table class="span8 sh-schedule-table table-condensed">
+    				<table class="table-condensed table-bordered sh-schedule-table">
     					<thead>
     						<tr>
-    							<td>#</td>
+    							<td class="sh-table-first-col">#</td>
     							<td>Пн</td>
     							<td>Вт</td>
     							<td>Ср</td>
@@ -43,49 +45,145 @@
     					</thead>
     					<tbody>
     						<tr>
-    							<td>3</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
+    							<td class="sh-table-first-col">3
+    								<div class="sh-from">12:10</div>
+    								<div class="sh-to">13:45</div>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Math</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-practice"></div>
+    								<span class="sh-table-subject">Chemistry</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Plot</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Scenery</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-practice"></div>
+    								<span class="sh-table-subject">Science</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
     						</tr>
     						
     						<tr>
-    							<td>4</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
+    							<td class="sh-table-first-col">4
+    								<div class="sh-from">13:55</div>
+    								<div class="sh-to">15:30</div>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-practice"></div>
+    								<span class="sh-table-subject">Math</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Chemistry</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lab"></div>
+    								<span class="sh-table-subject">Plot</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lab"></div>
+    								<span class="sh-table-subject">Scenery</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Science</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
     						</tr>
     						
     						<tr>
-    							<td>5</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
+    							<td class="sh-table-first-col">5
+    								<div class="sh-from">15:50</div>
+    								<div class="sh-to">17:25</div>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lab"></div>
+    								<span class="sh-table-subject">Math</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Chemistry</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-practice"></div>
+    								<span class="sh-table-subject">Plot</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Scenery</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Science</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
     						</tr>
     						
     						<tr>
-    							<td>6</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
-    							<td>Pi</td>
-    							<td>Math</td>
+    							<td class="sh-table-first-col">6
+    								<div class="sh-from">17:35</div>
+    								<div class="sh-to">19:10</div>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lab"></div>
+    								<span class="sh-table-subject">Math</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lab"></div>
+    								<span class="sh-table-subject">Chemistry</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Plot</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-lection"></div>
+    								<span class="sh-table-subject">Scenery</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
+    							<td>
+    								<div class="sh-table-type-practice"></div>
+    								<span class="sh-table-subject">Science</span><br>
+    								<span class="sh-table-type">ауд. 313(1)</span>
+    							</td>
     						</tr>
-    						
-    						
     					</tbody>
     				</table>
+    				<div class="sh-schedule-legend">
+    					<div class="sh-table-type-lection sh-inline"></div><span class="sh-table-type-desc">Лекция</span>
+    					<div class="sh-table-type-lab sh-inline"></div><span class="sh-table-type-desc">Лабораторная работа</span>
+    					<div class="sh-table-type-practice sh-inline"></div><span class="sh-table-type-desc">Практическая работа</span>
+    				</div>
     			</div>
     			<div class="span3 sh-calendar">
     				<div class="text-center sh-calendar-top">20</div>
+    				<div class="text-center sh-calendar-top sh-month">сентября</div>
     				<div class="sh-calendar-bottom">
-    					<table class="table-condensed">
+    					<table class="table table-condensed table-bordered">
 						    <thead>
 						        <tr>
 						            
@@ -103,7 +201,7 @@
 						        </tr>
 						    </thead>
 						    <tbody>
-						        <tr>
+						        <tr class="sh-calendar-tr">
 						            <td></td>
 						            <td></td>
 						            <td></td>
@@ -112,7 +210,7 @@
 						            <td>3</td>
 						            <td>4</td>
 						        </tr>
-						        <tr>
+						        <tr  class="sh-calendar-tr">
 						            <td>5</td>
 						            <td>6</td>
 						            <td>7</td>
@@ -121,7 +219,7 @@
 						            <td>10</td>
 						            <td>11</td>
 						        </tr>
-						        <tr>
+						        <tr  class="sh-calendar-tr">
 						            <td>12</td>
 						            <td>13</td>
 						            <td>14</td>
@@ -130,7 +228,7 @@
 						            <td>17</td>
 						            <td>18</td>
 						        </tr>
-						        <tr>
+						        <tr  class="sh-calendar-tr">
 						            <td>19</td>
 						            <td><strong>20</strong></td>
 						            <td>21</td>
@@ -139,7 +237,7 @@
 						            <td>24</td>
 						            <td>25</td>
 						        </tr>
-						        <tr>
+						        <tr  class="sh-calendar-tr">
 						            <td>26</td>
 						            <td>27</td>
 						            <td>28</td>
@@ -156,19 +254,54 @@
     		</div>
     		
     		<div class="row sh-row">
-    			<div class="span4 sh-files">
+    			<div class="span4 sh-files sh-folded-corner">
     				<div class="sh-label-container">
     					<span class="sh-label">Учебные материалы</span>
     				</div>
+    				<div class="sh-subject-list">
+    					<div class="sh-subject">Математика</div>
+    					<div class="sh-subject">Физика</div>
+    					<div class="sh-subject">Химия</div>
+    					<div class="sh-subject">Геометрия</div>
+    					<div class="sh-subject">Математический анализ</div>
+    					<div class="sh-subject">Алгебра</div>
+    					<div class="sh-subject">Дискретная математика</div>
+    					<div class="sh-subject">Статистика</div> 
+    					<div class="sh-subject">Математика</div>
+    					<div class="sh-subject">Физика</div>
+    					<div class="sh-subject">Химия</div>
+    					<div class="sh-subject">Геометрия</div>
+    					<div class="sh-subject">Математический анализ</div>
+    					<div class="sh-subject">Алгебра</div>
+    					<div class="sh-subject">Дискретная математика</div>
+    					<div class="sh-subject">Статистика</div>      					
+    				</div>
     			</div>
     			
-    			<div class="span8 sh-news">
+    			<div class="span8 sh-news sh-folded-corner">
     				<div class="sh-label-container">
     					<span class="sh-label">Новости</span>
     				</div>
+    				
+    				<div class="sh-news-list">
+    					<div class="sh-news-items">
+    						<span class="sh-news-label">Some heading</span>
+    						<span class="sh-news-date"><small>11-11-11</small></span>
+    						
+    						<p class="sh-news-entry">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель</p>
+    						
+    						
+    					</div>
+    				</div>
     			</div>
     		</div>
-
+			
+			<div class="navbar navbar-inverse">
+    			<div class="navbar-inner footer">
+        			<div class="text-center">2013</div>
+          		
+     		 </div>
+    	</div>
     		
     		
     	</div>

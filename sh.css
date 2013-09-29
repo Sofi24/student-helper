@@ -1,0 +1,93 @@
+body {
+	background: #76E5CF!important;
+}
+.navbar-inner {
+	height: 57px;
+}
+
+.sh-row {
+	margin-top: 40px;
+}
+.sh-form {
+	float: right;
+	margin-top: -20px;
+}
+
+.sh-logo {
+	font-family: bira_personal_use_onlyregular;
+	color: white;
+	font-size: 29pt;
+	margin-top: 15px;
+}
+
+.sh-image {
+	z-index: 9999;
+	position: fixed;
+	height: 80px;
+	width: 80px;
+	background: #FC7A56 url('../img/avatar.gif') no-repeat 50%;
+	margin-top: 20px;
+	margin-left: 70px;
+	border: 10px solid rgba(255, 255, 255, .5);
+	
+}
+.sh-calendar-top {
+	height: 170px;
+	font-size: 116pt;
+	color: #fff;
+	margin-top: 70px;
+}
+
+.sh-calendar-bottom {
+	height: 170px;
+	margin-top: -90px;
+	ñolor: #fff!important;
+}
+
+.sh-btn {
+	background: none;
+	border: none;
+}
+
+.sh-schedule {
+	height: 346px;
+	background: #F5F7DD;
+	box-shadow: 5px 5px 0 #D8D8D8;
+}
+
+.sh-calendar{
+	height: 346px;
+	background: #FC7A56;
+	box-shadow: 5px 5px 0 #D8D8D8;
+	
+}
+
+.container {
+	background: #fff;
+	padding: 88px 20px;
+}
+
+.sh-files, .sh-news {
+	background: #F5F7DD;
+	box-shadow: 5px 5px 0 #D8D8D8;
+	height: 460px;
+}
+
+table.sh-schedule-table tbody {
+	border: 1px solid #E2E2C7;
+}
+td {
+	width: 100px;
+}
+
+.sh-label {
+	background: #DFE0CA;
+	padding: 5px;
+	font-size: 14pt;
+	color: #fff;
+	
+}
+
+.sh-label-container {
+	margin: 15px;
+}
