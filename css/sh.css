@@ -68,17 +68,13 @@ th {
 	font-family: bira_personal_use_onlyregular;
 	color: white;
 	font-size: 25pt;
-	margin-top: 19px;
+	margin-top: 15px;
 }
 .search {
 	width: 140px;
-	outline: 5px solid rgba(200, 200, 200, .5);
 	margin-right: 10px;
 }
 
-.search:active {
-	outline: 5px solid rgba(200, 200, 200, .5)!important;
-}
 .sh-image {
 	z-index: 9999;
 	height: 70px;
@@ -101,7 +97,7 @@ th {
 .sh-calendar-bottom {
 	height: 170px;
 	margin-top: -70px;
-	Òolor: #fff!important;
+	—Åolor: #fff!important;
 }
 
 .sh-btn {
@@ -109,17 +105,14 @@ th {
 	border: none;
 }
 
-.sh-schedule {
+.sh-schedule, .sh-calendar, .sh-form-reg {
 	height: 346px;
 	background: #F5F7DD;
-	box-shadow: 5px 5px 0 #D8D8D8;
+	
 }
 
-.sh-calendar{
-	height: 346px;
-	background: #FC7A56;
-	box-shadow: 5px 5px 0 #D8D8D8;
-	
+.sh-calendar {
+	background: #ff8762;	
 }
 
 .container {
@@ -212,5 +205,87 @@ td {
 }
 
 .sh-folded-corner {
+	box-shadow: 5px 5px 0 #D8D8D8;
 	background:  #F5F7DD url('../img/folded-corner.gif') no-repeat;
+}
+
+
+.sh-form-reg {
+	height: 330px;
+	float: none;
+	margin: 88px auto;
+}
+
+.sh-form-auth {
+	height: 300px;
+	float: none;
+	margin: 88px auto;
+}
+
+.sh-registration {
+	text-align: center;
+	margin: 30px 15px;;
+}
+
+
+
+.sh-button {
+	min-width: 120px;
+	margin: 5px;
+	padding: 5px 10px 2px;
+	color: #fff;
+	background: #ff8762;
+	border-radius: 0;
+	border: none;
+	border-bottom: 5px solid #fc7a56;
+}
+
+.sh-button:active {
+	border-bottom: none;
+	margin-top: 10px;
+}
+
+.sh-label-reg {
+	line-height: 3;
+}
+
+.sh-remember-me {
+	
+	margin: 0 auto;
+	width: 220px;
+	height: 40px;
+}
+.sh-remember-me-label {
+	padding-left: 7px;
+	font-size: 0.8em;
+	float: left;
+}
+input[type=text], input[type=password], input[type=email] {
+	border: 5px solid #d8d8d8;
+}
+
+input[type=checkbox] {
+	float: left;
+}
+
+a {
+	color: #333;
+}
+
+.sh-forgot-password {
+	font-size: 0.8em;
+	text-decoration: underline;
+	float: right;
+}
+
+.sh-span-register {
+	
+	font-size: 0.8em;
+	text-decoration: underline;
+	margin: 0 auto;
+	margin-bottom: -10px;
+	float: none;
+	display: block;
+	text-align: right!important;
+	width: 220px;
 }
