@@ -57,6 +57,7 @@ th {
 }
 .sh-row {
 	margin-top: 40px;
+	margin-bottom: 88px;
 }
 
 .sh-form {
@@ -97,7 +98,7 @@ th {
 .sh-calendar-bottom {
 	height: 170px;
 	margin-top: -70px;
-	сolor: #fff!important;
+	color: #fff!important;
 }
 
 .sh-btn {
@@ -105,7 +106,7 @@ th {
 	border: none;
 }
 
-.sh-schedule, .sh-calendar, .sh-form-reg {
+.sh-schedule, .sh-calendar, .sh-form-reg, .sh-acc-settings {
 	height: 346px;
 	background: #F5F7DD;
 	
@@ -185,7 +186,7 @@ td {
 .sh-from, .sh-to {
 	font-size: 0.5em;
 	color: grey;
-	float:right;
+	float: right;
 }
 
 .sh-inline {
@@ -222,12 +223,26 @@ td {
 	margin: 88px auto;
 }
 
-.sh-registration {
+.sh-class-number {
+	float: left;
+}
+
+.sh-form-new-group  {
+	height: 200px;
+	float: none;
+	margin: 88px auto;
+}
+
+.sh-registration, .sh-new-group {
 	text-align: center;
 	margin: 30px 15px;;
 }
 
-
+.sh-form-files {
+	margin-top: 88px;
+	margin-bottom: 88px;
+	padding: 3px;
+}
 
 .sh-button {
 	min-width: 120px;
@@ -260,8 +275,17 @@ td {
 	font-size: 0.8em;
 	float: left;
 }
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password], input[type=email], input[type=file] {
 	border: 5px solid #d8d8d8;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=file]:focus {
+	border: 5px solid #76e5cf!important;
+}
+
+input[type=file] {
+    background: #fff;
+    width: 218px;
 }
 
 input[type=checkbox] {
@@ -288,4 +312,56 @@ a {
 	display: block;
 	text-align: right!important;
 	width: 220px;
+}
+
+.sh-input-settings {
+    float: right;
+}
+
+.sh-label-settings {
+    float: left;
+}
+
+.sh-form-acc-settings {
+    margin-top: 88px;
+    margin-bottom: 88px;
+    height: 380px;
+    padding: 3px 10px;
+  
+}
+
+.sh-files-buttons {
+	float: right;
+}
+
+.sh-table-files {
+	width: 700px;
+	margin: 40px auto;
+	color: #000;
+}
+
+tr.sh-td-files td {
+	width: auto;
+	padding: 5px;
+}
+
+.form-settings-left {
+	margin-top: 20px;
+	width: 60%;
+	float: left;
+	line-height: 3.5;
+}
+
+.form-settings-right {
+	text-align: right;
+	line-height: 3.5;
+	margin-top: 17px;
+	width: 30%;
+	float: right;
+	
+}
+
+.sh-button-center {
+	display: block;
+	margin: 10px auto;
 }
