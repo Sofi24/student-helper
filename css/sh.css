@@ -3,6 +3,12 @@
 	border-radius: 0px!important;
 }
 
+hr {
+	margin: 2px;
+}
+.sh-label-red {
+	background: #c16244!important;
+}
 body {
 	background: #76E5CF!important;
 }
@@ -11,15 +17,17 @@ body {
 	border-top: 5px solid #ddd;	
 }
 .table-bordered td {
+	vertical-align: top;
 	border-bottom: 1px solid #ddd;
+}
+button.btn {
+	margin-top: 9px!important;
 }
 
 th {
 	text-align: center!important;
 }
-.sh-calendar-tr td {
-	line-height: 12px!important;
-}
+
 .sh-month {
 	font-size: 20px!important;
 	margin-top: -90px!important;
@@ -87,33 +95,26 @@ th {
 	outline: 5px solid rgba(255, 255, 255, .5);
 	
 }
-.sh-calendar-top {
-	letter-spacing: 7px;
-	height: 170px;
-	font-size: 110pt;
-	color: #fff;
-	margin-top: 60px;
-}
 
-.sh-calendar-bottom {
-	height: 170px;
-	margin-top: -70px;
-	color: #fff!important;
-}
+
 
 .sh-btn {
 	background: none;
 	border: none;
 }
 
-.sh-schedule, .sh-calendar, .sh-form-reg, .sh-acc-settings {
+ .sh-form-reg, .sh-acc-settings {
 	height: 346px;
 	background: #F5F7DD;
 	
 }
 
-.sh-calendar {
-	background: #ff8762;	
+.sh-schedule {
+	height: 450px;
+}
+
+.sh-deadlines {
+	background: #ff8762!important;	
 }
 
 .container {
@@ -121,8 +122,16 @@ th {
 	padding: 0 25px;
 }
 
+.sh-deadlines-short-list {
+	list-style: none;
+	margin-top: 30px;
+}
 
-.sh-files, .sh-news {
+.sh-deadlines-short-list li {
+	margin-top: 10px;
+}
+
+.sh-files, .sh-news, .sh-deadlines {
 	background: #F5F7DD;
 	box-shadow: 5px 5px 0 #D8D8D8;
 	height: 460px;
@@ -135,7 +144,8 @@ table.sh-schedule-table {
 }
 
 td {
-	width: 100px;
+	font-size: 0.9em;
+	width: 150px;
 }
 
 .sh-label {
@@ -184,7 +194,7 @@ td {
 }
 
 .sh-from, .sh-to {
-	font-size: 0.5em;
+	font-size: 0.6em;
 	color: grey;
 	float: right;
 }
@@ -228,7 +238,7 @@ td {
 }
 
 .sh-form-new-group  {
-	height: 200px;
+	height: 380px;
 	float: none;
 	margin: 88px auto;
 }
@@ -244,6 +254,17 @@ td {
 	padding: 3px;
 }
 
+.sh-inverted {
+	
+	color: grey!important;
+	background: #F5F7DD!important;
+	border-bottom: 5px solid #dfe0ca!important;
+}
+
+.sh-inverted:active, .sh-center:active {
+	margin-top: 20px!important;
+	border: 0px solid grey!important;
+}
 .sh-button {
 	min-width: 120px;
 	margin: 5px;
@@ -255,9 +276,20 @@ td {
 	border-bottom: 5px solid #fc7a56;
 }
 
+.sh-button:focus {
+	outline: none;
+}
+
+.sh-center {
+	position: absolute;
+	display: block;
+	margin-left: 50px;
+}
+
 .sh-button:active {
+	outline: none;
 	border-bottom: none;
-	margin-top: 10px;
+	margin-top: 10px!important;
 }
 
 .sh-label-reg {
@@ -275,12 +307,13 @@ td {
 	font-size: 0.8em;
 	float: left;
 }
-input[type=text], input[type=password], input[type=email], input[type=file] {
+input[type=text], input[type=password], input[type=email], input[type=file], select {
 	border: 5px solid #d8d8d8;
 }
 
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=file]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=file]:focus, select:focus {
 	border: 5px solid #76e5cf!important;
+	outline: none;
 }
 
 input[type=file] {
@@ -290,6 +323,14 @@ input[type=file] {
 
 input[type=checkbox] {
 	float: left;
+}
+
+select {
+	margin: 0 auto 10px;
+	width: 225px;
+	height: 35px;
+	padding: 1px;
+	display: block;
 }
 
 a {
@@ -345,6 +386,21 @@ tr.sh-td-files td {
 	padding: 5px;
 }
 
+.sh-schedule-nav {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.sh-schedule-nav-left {
+	padding-left: 40px;
+	float: left;
+}
+
+.sh-schedule-nav-right {
+	padding-right: 40px;
+	float: right;
+}
+
 .form-settings-left {
 	margin-top: 20px;
 	width: 60%;
@@ -363,5 +419,6 @@ tr.sh-td-files td {
 
 .sh-button-center {
 	display: block;
-	margin: 10px auto;
+	margin-left: auto;
+	margin-right: auto;
 }
